@@ -64,7 +64,7 @@ const NewPrompt = ({ data }) => {
             dbData: {},
             aiData: {},
           });
-          accumulatedText.current.reset();
+          accumulatedText.current = "";
         });
     },
     onError: (err) => {
