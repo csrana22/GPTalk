@@ -18,8 +18,6 @@ const path = useLocation().pathname;
       }).then((res) => res.json()),
   });
 
-  console.log(data);
-
   return (
     <div className="chatPage">
       <div className="wrapper">

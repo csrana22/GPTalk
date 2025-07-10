@@ -64,6 +64,7 @@ const NewPrompt = ({ data }) => {
             dbData: {},
             aiData: {},
           });
+          accumulatedText.current.reset();
         });
     },
     onError: (err) => {
@@ -87,8 +88,6 @@ const NewPrompt = ({ data }) => {
       }
 
       mutation.mutate();
-      accumulatedText.current.reset();
-     
     } catch (err) {
       console.log(err);
     }
